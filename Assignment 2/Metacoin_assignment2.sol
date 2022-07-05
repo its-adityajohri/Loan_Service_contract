@@ -88,11 +88,12 @@ contract Loan is MetaCoin {
 
         loans[msg.sender]=toPay;
         if(loans[msg.sender]!=0){
-        emit Request(owner,principle,rate,time,toPay);
+        emit Request(Owner,principle,rate,time,toPay);
         return true;
         }
         else{
             return false;
+        }    
         // A creditor uses this function to request the Owner to settle his loan, and the amount to settle is calculated using the inputs.
         // Add appropriate definition below to store the loan request of a contract in the loans mapping,
         // Also emit the Request event after succesfully adding to the mapping, and return true. Return false if adding to the mapping failed (maybe the user entered a float rate, there were overflows and toPay comes to be lesser than principle, etc.
