@@ -1,4 +1,4 @@
-# Aditya-210058
+# Aditya Loan service contract
 In this loan service i have created 4 classes and used all concepts of OOP
 first lender and borrower information is to be stored in respective class objects. then objects for service class for borrowers and lenders will be made , function of the various functions in Service class are mentioned in comments 
 data of borrowers is saved in 2D list.
